@@ -1,0 +1,7 @@
+code,title,description,credits,maxStudents,currentEnrolled,semester,departmentCode_code,professorId_ID,schedule,roomNumber,isActive
+CS101,Programming Fundamentals,Intro to Programming,4,60,45,1,CSE,prof1,MWF 10-11,R101,true
+CS201,Data Structures,DSA Course,4,50,40,3,CSE,prof2,MWF 11-12,R102,true
+CS301,DBMS,Database Systems,4,50,35,5,CSE,prof1,TTS 9-10,R103,true
+EC101,Basic Electronics,Electronics Intro,3,60,50,1,ECE,prof3,MWF 2-3,R201,true
+EC201,Digital Logic,Logic Design,4,50,42,3,ECE,prof4,TTS 11-12,R202,true
+MBA101,Management Basics,Intro Management,3,70,60,1,MBA,prof5,MWF 1-2,R301,true

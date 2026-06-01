@@ -1,0 +1,6 @@
+ID,firstName,lastName,email,phone,departmentCode_code,designation,joinDate,salary,officeRoom
+prof1,Amit,Sharma,amit@tech.edu,9991111111,CSE,Professor,2015-01-10,120000,P101
+prof2,Neha,Gupta,neha@tech.edu,9992222222,CSE,Associate,2017-02-15,95000,P102
+prof3,Raj,Verma,raj@tech.edu,9993333333,ECE,Assistant,2020-05-11,70000,P201
+prof4,Priya,Singh,priya@tech.edu,9994444444,ECE,Associate,2016-09-01,90000,P202
+prof5,Karan,Malhotra,karan@tech.edu,9995555555,MBA,Full,2014-03-10,130000,P301

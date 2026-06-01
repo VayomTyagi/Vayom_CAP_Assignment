@@ -1,0 +1,5 @@
+ID,name,company,phone,email,address,city,pincode,gstNumber,tier
+cust1,Rohit Gupta,Gupta Traders,9811111111,rohit@gmail.com,MG Road,Delhi,110001,07ABCDE1234F1Z5,Regular
+cust2,Priya Verma,Verma Electronics,9822222222,priya@gmail.com,Sector 18,Noida,201301,09ABCDE5678G1Z2,Premium
+cust3,Karan Mehta,Mehta Industries,9833333333,karan@gmail.com,Industrial Area,Jaipur,302001,08ABCDE1111H1Z7,Enterprise
+cust4,Neha Agarwal,Agarwal Foods,9844444444,neha@gmail.com,Civil Lines,Lucknow,226001,09ABCDE9999J1Z4,Premium

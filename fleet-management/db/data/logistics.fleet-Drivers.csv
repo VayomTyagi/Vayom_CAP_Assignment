@@ -1,0 +1,5 @@
+ID,name,licenseNumber,licenseExpiry,phone,email,experience,rating,status,vehicle_ID,joinDate
+drv1,Raj Sharma,DL12345678,2028-05-01,9876543210,raj@speedlogistics.com,5,5,Available,veh1,2022-01-15
+drv2,Amit Singh,DL87654321,2027-09-20,9876543211,amit@speedlogistics.com,8,4,OnTrip,veh2,2020-08-01
+drv3,Vikas Kumar,DL45678912,2029-03-10,9876543212,vikas@speedlogistics.com,3,4,Available,veh3,2023-06-12
+drv4,Sandeep Yadav,DL65498732,2027-11-18,9876543213,sandeep@speedlogistics.com,10,5,OnLeave,veh5,2019-04-20

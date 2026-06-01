@@ -1,0 +1,6 @@
+ID,fromCity,toCity,distance,estimatedHours,tollCharges,isActive
+route1,Delhi,Noida,30.00,1.00,100.00,true
+route2,Delhi,Jaipur,280.00,5.50,800.00,true
+route3,Lucknow,Kanpur,90.00,2.00,150.00,true
+route4,Jaipur,Udaipur,395.00,7.00,950.00,true
+route5,Noida,Agra,210.00,4.00,450.00,true

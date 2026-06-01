@@ -1,0 +1,6 @@
+ID,registrationNumber,type,make,model,year,capacity,fuelType,status,lastServiceDate,mileage,insuranceExpiry
+veh1,UP85AB1234,Van,Tata,Ace Gold,2023,750.00,Diesel,Available,2026-01-10,45000.00,2027-01-10
+veh2,DL01CD5678,Truck,Ashok Leyland,Dost+,2022,2500.00,Diesel,OnTrip,2025-12-15,82000.00,2026-12-15
+veh3,HR26EF9012,Bike,Hero,Splendor,2024,150.00,Petrol,Available,2026-02-01,12000.00,2027-02-01
+veh4,RJ14GH3456,Trailer,BharatBenz,TrailerX,2021,12000.00,Diesel,Maintenance,2026-03-05,150000.00,2026-10-05
+veh5,UP16JK7890,Van,Mahindra,Jeeto,2023,900.00,CNG,Available,2026-01-20,30000.00,2027-01-20

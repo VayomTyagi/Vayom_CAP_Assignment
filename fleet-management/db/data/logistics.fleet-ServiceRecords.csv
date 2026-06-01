@@ -1,0 +1,6 @@
+ID,vehicle_ID,serviceDate,serviceType,cost,description,nextServiceDate
+srv1,veh1,2026-01-10,Regular,5000.00,Regular maintenance and oil change,2026-07-10
+srv2,veh2,2025-12-15,Repair,12000.00,Brake system repair,2026-06-15
+srv3,veh3,2026-02-01,Regular,2000.00,Engine tuning and inspection,2026-08-01
+srv4,veh4,2026-03-05,Accident,45000.00,Body repair after accident,2026-09-05
+srv5,veh5,2026-01-20,Regular,3500.00,CNG system maintenance,2026-07-20

@@ -1,0 +1,4 @@
+ID,name,address,city,capacity,type,amenities,hourlyRate,contactPerson,phone,isActive
+v001-0000-0000-0000-000000000001,Tech Convention Center,123 Innovation Drive,San Francisco,1200,Auditorium,"WiFi,Projector,Stage,Green Room,Parking",500.00,Alice Johnson,+1-415-555-0101,true
+v002-0000-0000-0000-000000000002,The Grand Conference Hall,45 Business Park Avenue,New York,600,ConferenceHall,"WiFi,Whiteboards,Video Conferencing,Catering,Reception",350.00,Bob Martinez,+1-212-555-0202,true
+v003-0000-0000-0000-000000000003,Virtual Hub Online,Online Platform,Virtual,9999,Virtual,"HD Streaming,Breakout Rooms,Chat,Recording,Screen Share",50.00,Carol Smith,+1-800-555-0303,true

@@ -1,0 +1,7 @@
+ID,firstName,lastName,specialization,qualification,experience,fee,department_ID,phone,email,availableDays,isActive
+doc1,Raj,Sharma,Cardiologist,MBBS MD,10,1000,d1,9991111111,raj@hospital.com,"Mon,Tue,Wed",true
+doc2,Amit,Gupta,Neurologist,MBBS DM,12,1500,d2,9991111112,amit@hospital.com,"Mon,Thu,Fri",true
+doc3,Vikas,Singh,Orthopedic,MBBS MS,8,800,d3,9991111113,vikas@hospital.com,"Tue,Wed,Fri",true
+doc4,Priya,Verma,Pediatrician,MBBS MD,9,900,d4,9991111114,priya@hospital.com,"Mon,Tue,Sat",true
+doc5,Neha,Kapoor,Cardiologist,MBBS MD,6,950,d1,9991111115,neha@hospital.com,"Wed,Thu,Fri",true
+doc6,Rohan,Mehta,Neurologist,MBBS DM,15,1800,d2,9991111116,rohan@hospital.com,"Mon,Tue,Wed",true

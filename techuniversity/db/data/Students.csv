@@ -1,0 +1,9 @@
+ID,rollNumber,firstName,lastName,email,phone,dateOfBirth,admissionYear,currentSemester,cgpa,departmentCode_code,isActive
+stu1,CS2201,Rohan,Sharma,rohan@mail.com,8881111111,2004-05-10,2022,5,8.4,CSE,true
+stu2,CS2202,Ankit,Verma,ankit@mail.com,8882222222,2004-08-20,2022,5,7.8,CSE,true
+stu3,CS2203,Sneha,Gupta,sneha@mail.com,8883333333,2004-01-12,2022,5,9.1,CSE,true
+stu4,EC2201,Riya,Singh,riya@mail.com,8884444444,2004-02-22,2022,5,8.7,ECE,true
+stu5,EC2202,Aman,Kumar,aman@mail.com,8885555555,2004-11-05,2022,5,7.5,ECE,true
+stu6,MBA2201,Pooja,Mehta,pooja@mail.com,8886666666,2003-12-15,2022,5,8.8,MBA,true
+stu7,MBA2202,Harsh,Agarwal,harsh@mail.com,8887777777,2003-07-25,2022,5,8.2,MBA,true
+stu8,CS2204,Kriti,Sharma,kriti@mail.com,8888888888,2004-09-09,2022,5,9.0,CSE,true

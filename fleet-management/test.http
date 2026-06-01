@@ -1,0 +1,55 @@
+### GET Available Vehicles
+GET http://localhost:4004/odata/v4/logistics/Vehicles?$filter=status eq 'Available'
+
+###
+
+### GET Shipments In Transit
+GET http://localhost:4004/odata/v4/logistics/Shipments?$filter=status eq 'InTransit'
+
+###
+
+### GET Shipments For Specific Customer
+GET http://localhost:4004/odata/v4/logistics/Shipments?$filter=customer_ID eq 'cust1'
+
+###
+
+### POST New Shipment Booking
+POST http://localhost:4004/odata/v4/logistics/Shipments
+Content-Type: application/json
+
+{
+  "trackingNumber": "SL-2026-00009",
+  "customer_ID": "cust1",
+  "driver_ID": "drv1",
+  "vehicle_ID": "veh1",
+  "pickupAddress": "Sector 62",
+  "deliveryAddress": "MG Road",
+  "pickupCity": "Noida",
+  "deliveryCity": "Gurgaon",
+  "weight": 120,
+  "bookedAt": "2026-06-01T09:00:00Z",
+  "estimatedDelivery": "2026-06-02T18:00:00Z",
+  "actualDistance": 42,
+  "charges": 1500
+}
+
+###
+
+### PATCH Shipment Delivered
+PATCH http://localhost:4004/odata/v4/logistics/Shipments(<SHIPMENT_ID>)
+Content-Type: application/json
+
+{
+  "status": "Delivered",
+  "deliveredAt": "2026-06-02T17:30:00Z"
+}
+
+###
+
+### GET Routes Between Two Cities
+GET http://localhost:4004/odata/v4/logistics/Routes?$filter=fromCity eq 'Delhi' and toCity eq 'Jaipur'
+
+###
+
+### GET Drivers Sorted By Rating Descending
+GET http://localhost:4004/odata/v4/logistics/Drivers?$orderby=rating desc

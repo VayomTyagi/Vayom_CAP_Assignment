@@ -1,0 +1,53 @@
+### 1. GET Published Events Sorted by Start Date
+GET http://localhost:4004/api/events/Events?$filter=status eq 'Published'&$orderby=startDate asc
+
+### 2. GET Events Filtered by Type "Workshop"
+GET http://localhost:4004/api/events/Events?$filter=eventType eq 'Workshop'
+
+### 3. GET All Registrations for a Specific Event
+GET http://localhost:4004/api/events/Registrations?$filter=event_ID eq 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa'
+
+### 4. POST a New Registration
+POST http://localhost:4004/api/events/Registrations
+Content-Type: application/json
+
+{
+"event_ID": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+"attendeeName": "Vayom Tyagi",
+"attendeeEmail": "[vayom.tyagi@gmail.com](mailto:vayom.tyagi@gmail.com)",
+"attendeePhone": "9876543210",
+"company": "GLA University",
+"ticketType": "VIP",
+"registrationDate": "2026-06-01T10:00:00Z",
+"amountPaid": 999.00,
+"paymentId": "PAY99999"
+}
+
+### 5. GET Speakers Sorted by Rating Descending
+GET http://localhost:4004/api/events/Speakers?$orderby=rating desc
+
+### 6. GET Events with Available Seats
+GET http://localhost:4004/api/events/Events?$filter=registeredCount lt maxAttendees
+
+### 7. PATCH Event Status from Draft to Published
+PATCH http://localhost:4004/api/events/Events('cccccccc-cccc-cccc-cccc-cccccccccccc')
+Content-Type: application/json
+
+{
+"status": "Published"
+}
+
+### 8. POST Feedback for an Event
+POST http://localhost:4004/api/events/Feedback
+Content-Type: application/json
+
+{
+"event_ID": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+"attendeeEmail": "[vayom.tyagi@gmail.com](mailto:vayom.tyagi@gmail.com)",
+"overallRating": 5,
+"contentRating": 5,
+"venueRating": 4,
+"speakerRating": 5,
+"comment": "Excellent workshop with practical examples.",
+"submittedAt": "2026-07-10T18:00:00Z"
+}

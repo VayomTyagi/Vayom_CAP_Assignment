@@ -1,0 +1,5 @@
+ID,name,floor,head,capacity,phone,isActive
+d1,Cardiology,2,Dr. Sharma,50,9876543210,true
+d2,Neurology,3,Dr. Gupta,40,9876543211,true
+d3,Orthopedics,1,Dr. Singh,60,9876543212,true
+d4,Pediatrics,4,Dr. Verma,45,9876543213,true
