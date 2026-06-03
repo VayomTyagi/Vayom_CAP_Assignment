@@ -1,0 +1,9 @@
+ID,name,description,price,currency_code,stock,minStock,rating,supplier_ID,category_ID,createdAt,createdBy,modifiedAt,modifiedBy
+P001,ThinkBook Laptop 15,15-inch business laptop with Intel Core i7,75999.00,INR,45,10,4.50,S001,CAT002,2024-01-10T10:00:00Z,admin,2024-01-10T10:00:00Z,admin
+P002,Samsung Galaxy S24,Flagship Android smartphone 256GB,64999.00,INR,80,15,4.70,S004,CAT003,2024-01-11T10:00:00Z,admin,2024-01-11T10:00:00Z,admin
+P003,Cisco Catalyst Switch,24-port managed gigabit switch,32000.00,INR,20,5,4.60,S003,CAT005,2024-01-12T10:00:00Z,admin,2024-01-12T10:00:00Z,admin
+P004,HP LaserJet Pro,Monochrome laser printer for office,18500.00,INR,35,8,4.30,S003,CAT004,2024-01-13T10:00:00Z,admin,2024-01-13T10:00:00Z,admin
+P005,Logitech MX Master 3,Advanced wireless mouse for productivity,8999.00,INR,60,12,4.80,S002,CAT004,2024-01-14T10:00:00Z,admin,2024-01-14T10:00:00Z,admin
+P006,Dell UltraSharp 27" Monitor,4K USB-C monitor for professionals,42000.00,INR,25,6,4.60,S003,CAT002,2024-01-15T10:00:00Z,admin,2024-01-15T10:00:00Z,admin
+P007,TP-Link Archer AX73,Wi-Fi 6 router dual band AX5400,7499.00,INR,5,8,4.40,S004,CAT005,2024-01-16T10:00:00Z,admin,2024-01-16T10:00:00Z,admin
+P008,Mechanical Keyboard K95,RGB mechanical gaming and office keyboard,12999.00,INR,40,10,4.55,S002,CAT004,2024-01-17T10:00:00Z,admin,2024-01-17T10:00:00Z,admin

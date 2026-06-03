@@ -1,0 +1,5 @@
+ID,name,contact,email,phone,city,country_code,isActive
+S001,TechVault Supplies,Ravi Kumar,ravi@techvault.in,+91-9876543210,Mumbai,IN,true
+S002,EuroTech GmbH,Hans Müller,hans@eurotech.de,+49-30-12345678,Berlin,DE,true
+S003,Global Parts Inc.,Sarah Johnson,sarah@globalparts.com,+1-408-555-0101,San Jose,US,true
+S004,AsiaPro Components,Li Wei,liwei@asiapro.cn,+86-21-87654321,Shanghai,CN,true
