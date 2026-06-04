@@ -1,0 +1,345 @@
+###############################################################################
+# HR MANAGEMENT SYSTEM - COMPLETE TEST SUITE
+###############################################################################
+@host = http://localhost:4004
+@hr = {{host}}/odata/v4/hr
+@hrview = {{host}}/odata/v4/hrview
+###############################################################################
+# SERVICE DISCOVERY
+###############################################################################
+### Root
+GET {{host}}
+###
+### HR Service Metadata
+GET {{hr}}/$metadata
+###
+### HR View Service Metadata
+GET {{hrview}}/$metadata
+###
+###############################################################################
+# DEPARTMENTS
+###############################################################################
+### Get All Departments
+GET {{hr}}/Departments
+###
+### Create Department - Engineering
+POST {{hr}}/Departments
+Content-Type: application/json
+{
+  "deptName": "Engineering",
+  "description": "Software Development Department",
+  "budget": 1000000,
+  "location": "Bangalore"
+}
+###
+### Create Department - HR
+POST {{hr}}/Departments
+Content-Type: application/json
+{
+  "deptName": "Human Resources",
+  "description": "Employee Management Department",
+  "budget": 500000,
+  "location": "Mumbai"
+}
+###
+### Get Departments Again
+GET {{hr}}/Departments
+###
+###############################################################################
+# EMPLOYEES
+###############################################################################
+### Get All Employees
+GET {{hr}}/Employees
+###
+### Create Employee
+### Replace department_ID with actual Department ID
+POST {{hr}}/Employees
+Content-Type: application/json
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@company.com",
+  "phone": "9999999999",
+  "hireDate": "2025-01-15",
+  "salary": 80000,
+  "jobTitle": "Senior Developer",
+  "isActive": true,
+  "department_ID": "REPLACE_DEPARTMENT_ID"
+}
+###
+### Create Employee 2
+POST {{hr}}/Employees
+Content-Type: application/json
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "jane.smith@company.com",
+  "phone": "8888888888",
+  "hireDate": "2024-08-01",
+  "salary": 95000,
+  "jobTitle": "Project Manager",
+  "isActive": true,
+  "department_ID": "REPLACE_DEPARTMENT_ID"
+}
+###
+### Get Employees Again
+GET {{hr}}/Employees
+###
+###############################################################################
+# PROJECTS
+###############################################################################
+### Get All Projects
+GET {{hr}}/Projects
+###
+### Create Project
+POST {{hr}}/Projects
+Content-Type: application/json
+{
+  "projectName": "HR Management System",
+  "description": "Internal HR Platform",
+  "startDate": "2025-01-01",
+  "endDate": "2025-12-31",
+  "budget": 500000,
+  "status": "Active"
+}
+###
+### Create Project 2
+POST {{hr}}/Projects
+Content-Type: application/json
+{
+  "projectName": "Employee Portal",
+  "description": "Self-service employee portal",
+  "startDate": "2025-02-01",
+  "endDate": "2025-10-31",
+  "budget": 300000,
+  "status": "Planning"
+}
+###
+### Get Projects Again
+GET {{hr}}/Projects
+###
+###############################################################################
+# SKILLS
+###############################################################################
+### Get All Skills
+GET {{hr}}/Skills
+###
+### Create Skill - SAP CAP
+POST {{hr}}/Skills
+Content-Type: application/json
+{
+  "skillName": "SAP CAP",
+  "category": "Technical",
+  "description": "SAP Cloud Application Programming Model"
+}
+###
+### Create Skill - Java
+POST {{hr}}/Skills
+Content-Type: application/json
+{
+  "skillName": "Java",
+  "category": "Technical",
+  "description": "Backend Development"
+}
+###
+### Create Skill - Leadership
+POST {{hr}}/Skills
+Content-Type: application/json
+{
+  "skillName": "Leadership",
+  "category": "Management",
+  "description": "Team Leadership and Management"
+}
+###
+### Get Skills Again
+GET {{hr}}/Skills
+###
+###############################################################################
+# ASSIGNMENTS
+###############################################################################
+### Get All Assignments
+GET {{hr}}/Assignments
+###
+### Create Assignment
+### Replace IDs before executing
+POST {{hr}}/Assignments
+Content-Type: application/json
+{
+  "employee_ID": "REPLACE_EMPLOYEE_ID",
+  "project_ID": "REPLACE_PROJECT_ID",
+  "role": "Backend Developer",
+  "allocation": 100,
+  "startDate": "2025-01-01",
+  "endDate": "2025-06-30"
+}
+###
+### Create Second Assignment
+POST {{hr}}/Assignments
+Content-Type: application/json
+{
+  "employee_ID": "REPLACE_EMPLOYEE_ID",
+  "project_ID": "REPLACE_PROJECT_ID",
+  "role": "Technical Lead",
+  "allocation": 50,
+  "startDate": "2025-02-01",
+  "endDate": "2025-12-31"
+}
+###
+### Get Assignments Again
+GET {{hr}}/Assignments
+###
+###############################################################################
+# EMPLOYEE SKILLS
+###############################################################################
+### Get Employee Skills
+GET {{hr}}/EmployeeSkills
+###
+### Create Employee Skill
+### Replace IDs before executing
+POST {{hr}}/EmployeeSkills
+Content-Type: application/json
+{
+  "employee_ID": "REPLACE_EMPLOYEE_ID",
+  "skill_ID": "REPLACE_SKILL_ID",
+  "proficiency": "Advanced",
+  "yearsOfExperience": 3.5,
+  "certifiedDate": "2024-05-10"
+}
+###
+### Create Another Employee Skill
+POST {{hr}}/EmployeeSkills
+Content-Type: application/json
+{
+  "employee_ID": "REPLACE_EMPLOYEE_ID",
+  "skill_ID": "REPLACE_SKILL_ID",
+  "proficiency": "Expert",
+  "yearsOfExperience": 8.0,
+  "certifiedDate": "2020-01-01"
+}
+###
+### Get Employee Skills Again
+GET {{hr}}/EmployeeSkills
+###
+###############################################################################
+# ASSOCIATION TESTS
+###############################################################################
+### Employee -> Department
+GET {{hr}}/Employees?$expand=department
+###
+### Employee -> Assignments
+GET {{hr}}/Employees?$expand=assignments
+###
+### Employee -> Skills
+GET {{hr}}/Employees?$expand=skills
+###
+### Employee -> Department + Assignments
+GET {{hr}}/Employees?$expand=department,assignments
+###
+### Department -> Employees
+GET {{hr}}/Departments?$expand=employees
+###
+### Department -> Head
+GET {{hr}}/Departments?$expand=head
+###
+### Projects -> Assignments
+GET {{hr}}/Projects?$expand=assignments
+###
+### Skills -> EmployeeSkills
+GET {{hr}}/Skills?$expand=employeeSkills
+###
+###############################################################################
+# FILTER TESTS
+###############################################################################
+### Active Employees
+GET {{hr}}/Employees?$filter=isActive eq true
+###
+### Active Projects
+GET {{hr}}/Projects?$filter=status eq 'Active'
+###
+### Employees Ordered By Salary
+GET {{hr}}/Employees?$orderby=salary desc
+###
+### Top 5 Employees
+GET {{hr}}/Employees?$top=5
+###
+###############################################################################
+# VIEW TESTS
+###############################################################################
+### Team Overview
+GET {{hrview}}/TeamOverview
+###
+### Project Dashboard
+GET {{hrview}}/ProjectDashboard
+###
+### Skills Matrix
+GET {{hrview}}/SkillsMatrix
+###
+### Department Summary
+GET {{hrview}}/DepartmentSummary
+###
+### Employee Projects
+GET {{hrview}}/EmployeeProjects
+###
+### Project Resources
+GET {{hrview}}/ProjectResources
+###
+###############################################################################
+# VIEW FILTER TESTS
+###############################################################################
+### Team Overview Filter
+GET {{hrview}}/TeamOverview?$filter=isActive eq true
+###
+### Project Dashboard Sorted
+GET {{hrview}}/ProjectDashboard?$orderby=projectName
+###
+### Skills Matrix Top 10
+GET {{hrview}}/SkillsMatrix?$top=10
+###
+###############################################################################
+# UPDATE TESTS
+###############################################################################
+### Update Employee
+### Replace ID
+PATCH {{hr}}/Employees(REPLACE_EMPLOYEE_ID)
+Content-Type: application/json
+{
+  "salary": 90000,
+  "jobTitle": "Lead Developer"
+}
+###
+### Update Project
+### Replace ID
+PATCH {{hr}}/Projects(REPLACE_PROJECT_ID)
+Content-Type: application/json
+{
+  "status": "Completed"
+}
+###
+###############################################################################
+# DELETE TESTS
+###############################################################################
+### Delete Assignment
+### Replace ID
+DELETE {{hr}}/Assignments(REPLACE_ASSIGNMENT_ID)
+###
+###############################################################################
+# FINAL VERIFICATION
+###############################################################################
+### Verify Departments
+GET {{hr}}/Departments
+###
+### Verify Employees
+GET {{hr}}/Employees
+###
+### Verify Projects
+GET {{hr}}/Projects
+###
+### Verify Skills
+GET {{hr}}/Skills
+###
+### Verify Assignments
+GET {{hr}}/Assignments
+###
+### Verify Employee Skills
+GET {{hr}}/EmployeeSkills
+###
