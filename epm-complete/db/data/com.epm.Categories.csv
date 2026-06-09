@@ -1,6 +1,0 @@
-ID,name,description,parentCategory_ID
-CAT001,Electronics,Electronic devices and accessories,
-CAT002,Computers,Desktops laptops and computing devices,CAT001
-CAT003,Mobile Devices,Smartphones tablets and wearables,CAT001
-CAT004,Office Supplies,Stationery and office equipment,
-CAT005,Networking,Routers switches and networking hardware,CAT001
