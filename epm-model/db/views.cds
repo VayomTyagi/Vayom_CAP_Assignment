@@ -1,47 +1,46 @@
-namespace com.epm.views;
-using { com.epm.Products, com.epm.SalesOrders } from './schema';
+namespace com.epm;
 
+using com.epm as epm from './schema';
 
-entity ProductCatalog as select from Products {
+entity ProductCatalog as select from epm.Products {
   ID,
-  productName,
+  name,
   description,
   price,
-  currency,
-  rating,
-  stock,
-  (price * 0.82) as priceExTax : Decimal(10,2),
-  (price * 0.18) as taxAmount  : Decimal(10,2),
-  supplier.supplierName as supplierName,
-  category.categoryName as categoryName,
-  case
-    when stock > 20 then 'In Stock'
-    when stock > 0  then 'Low Stock'
-    else 'Out of Stock'
-  end as availability : String(20)
-} where isAvailable = true;
-
-// View: Order Summary (flattened for reports)
-entity OrderSummary as select from SalesOrders {
-  ID,
-  orderNumber,
-  orderDate,
-  grossAmount,
-  netAmount,
-  taxAmount,
-  status,
-  customer.customerName as customerName,
-  customer.email        as customerEmail,
-  customer.city         as customerCity
-};
-
-// View: Low Stock Alert
-entity LowStockProducts as select from Products {
-  ID,
-  productName,
+  currency.code as currency,
   stock,
   minStock,
-  supplier.supplierName as supplierName,
-  supplier.email        as supplierEmail,
-  supplier.phone        as supplierPhone
-} where stock <= minStock and isAvailable = true;
+  rating,
+  supplier.name as supplierName,
+  category.name as categoryName,
+
+  case
+    when stock <= minStock then 'LOW STOCK'
+    when stock <= minStock + 10 then 'MEDIUM STOCK'
+    else 'AVAILABLE'
+  end as stockStatus : String(20)
+};
+
+entity OrderReport as select from epm.SalesOrders {
+  ID,
+  orderNumber,
+  customer.name as customerName,
+  orderDate,
+  totalAmount,
+  taxAmount,
+  netAmount,
+  currency.code as currency,
+  status
+};
+
+entity LowStockAlert as select from epm.Products {
+  ID,
+  name as productName,
+  stock,
+  minStock,
+  supplier.name as supplierName,
+  supplier.contact as supplierContact,
+  supplier.email as supplierEmail,
+  supplier.phone as supplierPhone
+}
+where stock <= minStock;

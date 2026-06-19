@@ -1,21 +1,9 @@
-ID,supplierName,contactPerson,email,phone,city,country_code,isActive,createdAt,createdBy,modifiedAt,modifiedBy
-51595545-afff-4933-a747-63bf2b3f6890,supplierName-5159554,contactPerson-5159554,email-5159554,phone-5159554,city-5159554,855,true,2017-08-04T00:00:00.000Z,createdBy.32l4y@example.net,2007-10-25T00:00:00.000Z,modifiedBy.32l4y@example.com
-16472061-1f70-447f-883c-40013a7b93bc,supplierName-16472061,contactPerson-16472061,email-16472061,phone-16472061,city-16472061,855,false,2016-09-17T00:00:00.000Z,createdBy.9t1x9@example.org,2020-08-03T00:00:00.000Z,modifiedBy.9t1x9@example.org
-16472062-8349-4606-b8ed-8fae0eacde10,supplierName-16472062,contactPerson-16472062,email-16472062,phone-16472062,city-16472062,855,true,2020-01-08T00:00:00.000Z,createdBy.9t1xa@example.org,2022-08-03T00:00:00.000Z,modifiedBy.9t1xa@example.org
-16472063-44f2-4a6d-8007-c67515a60341,supplierName-16472063,contactPerson-16472063,email-16472063,phone-16472063,city-16472063,855,false,2002-04-09T00:00:00.000Z,createdBy.9t1xb@example.net,2002-12-04T00:00:00.000Z,modifiedBy.9t1xb@example.org
-16472064-49aa-461b-beb6-3c69b5705a39,supplierName-16472064,contactPerson-16472064,email-16472064,phone-16472064,city-16472064,855,true,2008-09-14T00:00:00.000Z,createdBy.9t1xc@example.net,2008-06-30T00:00:00.000Z,modifiedBy.9t1xc@example.com
-16472065-d073-4af3-81fc-34f9f17f4200,supplierName-16472065,contactPerson-16472065,email-16472065,phone-16472065,city-16472065,855,false,2006-05-28T00:00:00.000Z,createdBy.9t1xd@example.org,2017-09-05T00:00:00.000Z,modifiedBy.9t1xd@example.org
-16472066-1a06-4887-9058-f9c7a2129d6f,supplierName-16472066,contactPerson-16472066,email-16472066,phone-16472066,city-16472066,855,true,2019-10-16T00:00:00.000Z,createdBy.9t1xe@example.org,2019-02-28T00:00:00.000Z,modifiedBy.9t1xe@example.org
-16472067-186d-4a6b-8eb4-14db3733720b,supplierName-16472067,contactPerson-16472067,email-16472067,phone-16472067,city-16472067,855,false,2008-01-09T00:00:00.000Z,createdBy.9t1xf@example.net,2000-11-20T00:00:00.000Z,modifiedBy.9t1xf@example.net
-16472068-f10e-4733-b6e0-8d45612d674f,supplierName-16472068,contactPerson-16472068,email-16472068,phone-16472068,city-16472068,855,true,2023-04-09T00:00:00.000Z,createdBy.9t1xg@example.org,2015-10-13T00:00:00.000Z,modifiedBy.9t1xg@example.com
-16472069-0d9c-452a-92fa-e7f436cb3f0e,supplierName-16472069,contactPerson-16472069,email-16472069,phone-16472069,city-16472069,855,false,2005-08-29T00:00:00.000Z,createdBy.9t1xh@example.com,2007-04-25T00:00:00.000Z,modifiedBy.9t1xh@example.org
-16472070-fc5c-4205-a3a6-18dd2645d4dd,supplierName-16472070,contactPerson-16472070,email-16472070,phone-16472070,city-16472070,855,true,2003-07-31T00:00:00.000Z,createdBy.9t1xi@example.net,2001-08-23T00:00:00.000Z,modifiedBy.9t1xi@example.com
-16472071-1f26-42b8-bd46-00f24dcaa576,supplierName-16472071,contactPerson-16472071,email-16472071,phone-16472071,city-16472071,855,false,2012-10-28T00:00:00.000Z,createdBy.9t1xj@example.net,2021-06-02T00:00:00.000Z,modifiedBy.9t1xj@example.org
-16472072-f671-42ce-ab0b-280448d2d127,supplierName-16472072,contactPerson-16472072,email-16472072,phone-16472072,city-16472072,855,true,2011-07-29T00:00:00.000Z,createdBy.9t1xk@example.org,2019-05-25T00:00:00.000Z,modifiedBy.9t1xk@example.org
-16472073-4ca9-4e9d-a758-66fd2afb6767,supplierName-16472073,contactPerson-16472073,email-16472073,phone-16472073,city-16472073,855,false,2006-03-23T00:00:00.000Z,createdBy.9t1xl@example.net,2005-11-27T00:00:00.000Z,modifiedBy.9t1xl@example.org
-16472074-79e4-4d05-86d1-88a056d9464b,supplierName-16472074,contactPerson-16472074,email-16472074,phone-16472074,city-16472074,855,true,2017-05-24T00:00:00.000Z,createdBy.9t1xm@example.net,2018-08-24T00:00:00.000Z,modifiedBy.9t1xm@example.org
-16472075-a875-42fb-987d-c350c9f3f728,supplierName-16472075,contactPerson-16472075,email-16472075,phone-16472075,city-16472075,855,false,2021-09-28T00:00:00.000Z,createdBy.9t1xn@example.org,2009-02-22T00:00:00.000Z,modifiedBy.9t1xn@example.net
-16472076-d0fd-4b66-bb9c-1c4a23035094,supplierName-16472076,contactPerson-16472076,email-16472076,phone-16472076,city-16472076,855,true,2002-05-24T00:00:00.000Z,createdBy.9t1xo@example.com,2017-09-26T00:00:00.000Z,modifiedBy.9t1xo@example.net
-16472077-a203-4df6-bb5a-4df67458f015,supplierName-16472077,contactPerson-16472077,email-16472077,phone-16472077,city-16472077,855,false,2002-02-02T00:00:00.000Z,createdBy.9t1xp@example.org,2021-10-11T00:00:00.000Z,modifiedBy.9t1xp@example.com
-16472078-3500-43dc-aa61-2906305002c4,supplierName-16472078,contactPerson-16472078,email-16472078,phone-16472078,city-16472078,855,true,2020-04-24T00:00:00.000Z,createdBy.9t1xq@example.com,2012-05-26T00:00:00.000Z,modifiedBy.9t1xq@example.com
-16472079-72c8-4d4d-9a75-17c4bc7900b1,supplierName-16472079,contactPerson-16472079,email-16472079,phone-16472079,city-16472079,855,false,2021-05-28T00:00:00.000Z,createdBy.9t1xr@example.net,2001-04-06T00:00:00.000Z,modifiedBy.9t1xr@example.net
+ID,name,contact,email,phone,city,country_code,isActive
+11111111-1111-1111-1111-111111111111,TechSource Pvt Ltd,Rajesh Kumar,rajesh@techsource.com,9876543210,Bhubaneswar,IN,true
+22222222-2222-2222-2222-222222222222,Global Office Supplies,Anita Sharma,anita@globaloffice.com,9876543211,Cuttack,IN,true
+33333333-3333-3333-3333-333333333333,ElectroMart India,Suresh Das,suresh@electromart.com,9876543212,Kolkata,IN,true
+44444444-4444-4444-4444-444444444444,Prime Hardware Co,Meera Patnaik,meera@primehardware.com,9876543213,Delhi,IN,true
+55555555-5555-5555-5555-555555555555,Smart Devices Ltd,Vikram Singh,vikram@smartdevices.com,9876543214,Bangalore,IN,true
+66666666-6666-6666-6666-666666666666,OfficeHub Solutions,Pooja Verma,pooja@officehub.com,9876543215,Hyderabad,IN,true
+77777777-7777-7777-7777-777777777777,Digital World Pvt Ltd,Arjun Reddy,arjun@digitalworld.com,9876543216,Chennai,IN,true
+88888888-8888-8888-8888-888888888888,NextGen Electronics,Karan Malhotra,karan@nextgen.com,9876543217,Pune,IN,true

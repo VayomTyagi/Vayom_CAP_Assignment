@@ -1,21 +1,6 @@
 code,symbol,minorUnit,name,descr
-783,64783,38,name-18164783,descr-18164783
-784,64784,36,name-18164784,descr-18164784
-785,64785,91,name-18164785,descr-18164785
-786,64786,51,name-18164786,descr-18164786
-787,64787,68,name-18164787,descr-18164787
-788,64788,75,name-18164788,descr-18164788
-789,64789,76,name-18164789,descr-18164789
-790,64790,41,name-18164790,descr-18164790
-791,64791,13,name-18164791,descr-18164791
-792,64792,72,name-18164792,descr-18164792
-793,64793,48,name-18164793,descr-18164793
-794,64794,4,name-18164794,descr-18164794
-795,64795,29,name-18164795,descr-18164795
-796,64796,12,name-18164796,descr-18164796
-797,64797,8,name-18164797,descr-18164797
-798,64798,92,name-18164798,descr-18164798
-799,64799,21,name-18164799,descr-18164799
-800,64800,11,name-18164800,descr-18164800
-801,64801,2,name-18164801,descr-18164801
-802,64802,49,name-18164802,descr-18164802
+INR,₹,2,Indian Rupee,Official currency of India
+USD,$,2,US Dollar,Official currency of the United States
+EUR,€,2,Euro,Official currency of European Union countries
+GBP,£,2,British Pound,Official currency of the United Kingdom
+JPY,¥,0,Japanese Yen,Official currency of Japan

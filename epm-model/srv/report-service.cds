@@ -1,9 +1,8 @@
-using { com.epm.views as vdb } from '../db/views';
+using { com.epm as epm } from '../db/views';
 
+@readonly
 service ReportService {
-
-    @readonly entity ProductCatalog as projection on vdb.ProductCatalog;
-    @readonly entity OrderReport    as projection on vdb.OrderSummary;
-    @readonly entity LowStockAlert  as projection on vdb.LowStockProducts;
-
+  entity ProductCatalog as projection on epm.ProductCatalog;
+  entity OrderReport as projection on epm.OrderReport;
+  entity LowStockAlert as projection on epm.LowStockAlert;
 }

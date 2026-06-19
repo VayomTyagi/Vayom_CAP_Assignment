@@ -1,21 +1,9 @@
-ID,categoryName,description,createdAt,createdBy,modifiedAt,modifiedBy
-31031434-90a4-437d-8204-7a9312db97e4,categoryName-31031434,description-31031434,2007-10-12T00:00:00.000Z,createdBy.ih40a@example.com,2012-11-23T00:00:00.000Z,modifiedBy.ih40a@example.com
-28174950-ffeb-484c-b8cc-87510b421b3b,categoryName-28174950,description-28174950,2010-05-04T00:00:00.000Z,createdBy.grvxi@example.org,2006-04-20T00:00:00.000Z,modifiedBy.grvxi@example.net
-28174951-3222-463e-85f7-a11fb24c22f9,categoryName-28174951,description-28174951,2000-12-22T00:00:00.000Z,createdBy.grvxj@example.net,2022-05-28T00:00:00.000Z,modifiedBy.grvxj@example.com
-28174952-8444-49bc-8ab1-da8f75f4c018,categoryName-28174952,description-28174952,2019-04-21T00:00:00.000Z,createdBy.grvxk@example.net,2006-09-29T00:00:00.000Z,modifiedBy.grvxk@example.com
-28174953-a44a-4e90-bd79-9a3dfea89c3a,categoryName-28174953,description-28174953,2013-09-18T00:00:00.000Z,createdBy.grvxl@example.net,2013-03-16T00:00:00.000Z,modifiedBy.grvxl@example.net
-28174954-7462-42f4-88e6-37956eee1627,categoryName-28174954,description-28174954,2008-02-06T00:00:00.000Z,createdBy.grvxm@example.com,2016-11-29T00:00:00.000Z,modifiedBy.grvxm@example.org
-28174955-acde-4f20-bb59-93bab45f79d2,categoryName-28174955,description-28174955,2008-05-23T00:00:00.000Z,createdBy.grvxn@example.com,2018-09-14T00:00:00.000Z,modifiedBy.grvxn@example.net
-28174956-c95d-4b95-b599-956da21eb49e,categoryName-28174956,description-28174956,2008-07-20T00:00:00.000Z,createdBy.grvxo@example.com,2002-05-02T00:00:00.000Z,modifiedBy.grvxo@example.com
-28174957-fd75-4849-83e1-5e144b9fa4ea,categoryName-28174957,description-28174957,2023-12-26T00:00:00.000Z,createdBy.grvxp@example.net,2004-10-23T00:00:00.000Z,modifiedBy.grvxp@example.org
-28174958-f88a-472e-8ce0-46235a7dbc51,categoryName-28174958,description-28174958,2021-02-09T00:00:00.000Z,createdBy.grvxq@example.net,2002-09-02T00:00:00.000Z,modifiedBy.grvxq@example.org
-28174959-86d4-44cd-83bc-6406cf2b3dfa,categoryName-28174959,description-28174959,2007-01-23T00:00:00.000Z,createdBy.grvxr@example.org,2016-07-29T00:00:00.000Z,modifiedBy.grvxr@example.net
-28174960-b969-4eca-85f9-4620993a668c,categoryName-28174960,description-28174960,2019-08-01T00:00:00.000Z,createdBy.grvxs@example.org,2022-05-01T00:00:00.000Z,modifiedBy.grvxs@example.com
-28174961-e30f-4f28-a7ce-95e7f1178a43,categoryName-28174961,description-28174961,2010-08-24T00:00:00.000Z,createdBy.grvxt@example.net,2002-02-09T00:00:00.000Z,modifiedBy.grvxt@example.org
-28174962-1003-4be8-bee1-8cf41c0b3d06,categoryName-28174962,description-28174962,2004-09-22T00:00:00.000Z,createdBy.grvxu@example.org,2007-06-28T00:00:00.000Z,modifiedBy.grvxu@example.org
-28174963-413c-4825-aa9c-66ca759b8dd9,categoryName-28174963,description-28174963,2015-07-06T00:00:00.000Z,createdBy.grvxv@example.com,2013-06-10T00:00:00.000Z,modifiedBy.grvxv@example.com
-28174964-6892-49d9-afd1-3267a351c638,categoryName-28174964,description-28174964,2012-09-05T00:00:00.000Z,createdBy.grvxw@example.org,2009-11-02T00:00:00.000Z,modifiedBy.grvxw@example.com
-28174965-9614-4b0f-9084-601c79b953bf,categoryName-28174965,description-28174965,2009-07-19T00:00:00.000Z,createdBy.grvxx@example.org,2016-02-25T00:00:00.000Z,modifiedBy.grvxx@example.com
-28174966-381d-48e3-85f7-aceb66a7f93c,categoryName-28174966,description-28174966,2017-04-14T00:00:00.000Z,createdBy.grvxy@example.net,2011-05-30T00:00:00.000Z,modifiedBy.grvxy@example.net
-28174967-6d12-44ba-91da-a826c14d093f,categoryName-28174967,description-28174967,2022-02-03T00:00:00.000Z,createdBy.grvxz@example.net,2022-05-16T00:00:00.000Z,modifiedBy.grvxz@example.net
-28174968-38ca-4d2e-93b1-3226d81865f2,categoryName-28174968,description-28174968,2016-07-04T00:00:00.000Z,createdBy.grvy0@example.net,2017-08-25T00:00:00.000Z,modifiedBy.grvy0@example.org
+ID,name,description,parentCategory_ID
+aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa,Electronics,Electronic items,
+bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb,Office Supplies,Office stationery and supplies,
+cccccccc-cccc-cccc-cccc-cccccccccccc,Hardware,Computer hardware,
+dddddddd-dddd-dddd-dddd-dddddddddddd,Laptops,Laptop products,aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa
+eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee,Accessories,Computer accessories,cccccccc-cccc-cccc-cccc-cccccccccccc
+ffffffff-ffff-ffff-ffff-ffffffffffff,Printers,Printing devices,aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa
+99999999-9999-9999-9999-999999999999,Monitors,Display devices,aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa
+88888888-8888-8888-8888-888888888888,Furniture,Office furniture,bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb
