@@ -1,60 +1,47 @@
 {
   "name": "epm",
   "version": "1.0.0",
-
   "dependencies": {
     "@sap/cds": "^9",
-    "@sap/xssec": "^4"
+    "@sap/xssec": "^4",
+    "passport": "^0.7.0"
   },
-
   "devDependencies": {
-    "@cap-js/sqlite": "^2.4",
-    "cds-plugin-ui5": "^0.17.0"
+    "@cap-js/sqlite": "^2.4"
   },
-
   "scripts": {
-    "start": "cds-serve",
-    "watch-purchasorder": "cds watch --open purchasorder/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "start": "cds-serve"
   },
-
   "private": true,
-
-  "workspaces": [
-    "app/*"
-  ],
-
-  "sapux": [
-    "app/purchasorder"
-  ],
-
   "cds": {
     "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": { "url": "db.sqlite" }
+      },
       "auth": {
         "kind": "xsuaa",
-
         "[development]": {
           "kind": "mocked",
-
           "users": {
-            "viewer@test.com": {
-              "password": "pass",
-              "roles": [
-                "Viewer"
-              ]
+            "*": false,
+            "alice": {
+              "password": "alice",
+              "roles": ["PurchaseManager", "Viewer"],
+              "attr": { "Department": "Engineering" }
             },
-
-            "manager@test.com": {
-              "password": "pass",
-              "roles": [
-                "Manager"
-              ]
+            "bob": {
+              "password": "bob",
+              "roles": ["PurchaseManager", "Viewer"],
+              "attr": { "Department": "Marketing" }
             },
-
-            "admin@test.com": {
-              "password": "pass",
-              "roles": [
-                "Administrator"
-              ]
+            "carol": {
+              "password": "carol",
+              "roles": ["Viewer"]
+            },
+            "dave": {
+              "password": "dave",
+              "roles": ["Administrator", "PurchaseManager", "Viewer"]
             }
           }
         }

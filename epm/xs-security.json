@@ -1,7 +1,6 @@
 {
   "xsappname": "epm",
   "tenant-mode": "dedicated",
-
   "scopes": [
     {
       "name": "$XSAPPNAME.View",
@@ -22,11 +21,21 @@
     {
       "name": "$XSAPPNAME.Admin",
       "description": "Administrative access"
+    },
+    {
+      "name": "$XSAPPNAME.Viewer",
+      "description": "Viewer"
+    },
+    {
+      "name": "$XSAPPNAME.PurchaseManager",
+      "description": "PurchaseManager"
+    },
+    {
+      "name": "$XSAPPNAME.Administrator",
+      "description": "Administrator"
     }
   ],
-
   "attributes": [],
-
   "role-templates": [
     {
       "name": "Viewer",
