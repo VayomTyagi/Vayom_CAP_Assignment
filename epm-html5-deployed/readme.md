@@ -26,7 +26,7 @@ npm ci
 Run CAP locally with mocked users:
 
 ```sh
-npm run watch
+npm run watch or cds w
 ```
 
 Useful mock users are defined in `package.json`:
